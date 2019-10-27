@@ -30,9 +30,9 @@ public class recycleadapter extends RecyclerView.Adapter<recycleadapter.recycler
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final recyclerholder holder, int position) {
+    public void onBindViewHolder(@NonNull final recyclerholder holder, int position1) {
        // holder.txtName.setText(myList.get(position));
-        holder.img.setText(myList.get(position));
+        holder.img.setText(myList.get(position1));
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
