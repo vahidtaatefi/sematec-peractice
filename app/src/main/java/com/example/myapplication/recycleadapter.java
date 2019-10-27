@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,7 +40,6 @@ public class recycleadapter extends RecyclerView.Adapter<recycleadapter.recycler
                 if(holder.img.getText()=="Profile")
                 {
                     intent = new Intent(v.getContext(),profileset.class);
-
                 }else
                 {
                     intent=new Intent(v.getContext(),phone.class);
@@ -50,11 +48,6 @@ public class recycleadapter extends RecyclerView.Adapter<recycleadapter.recycler
             }
         });
 
-
-//      if (position==0)
-//          holder.img.setBackgroundResource(R.drawable.profile);
-//      else
-//          holder.img.setBackgroundResource(R.drawable.call);
     }
 
     @Override
