@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> list = new ArrayList<>();
         list.add("Profile");
         list.add("Caller");
+        list.add("Cinema");
+        list.add("Camera");
         ImageButton navbar = findViewById(R.id.navbar);
         navbar.setOnClickListener(new View.OnClickListener() {
             @Override

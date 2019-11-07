@@ -40,9 +40,17 @@ public class recycleadapter extends RecyclerView.Adapter<recycleadapter.recycler
                 if(holder.img.getText()=="Profile")
                 {
                     intent = new Intent(v.getContext(),profileset.class);
-                }else
+                }else if(holder.img.getText()=="Caller")
                 {
                     intent=new Intent(v.getContext(),phone.class);
+                }
+            else if(holder.img.getText()=="Camera")
+            {
+                intent=new Intent(v.getContext(),Camera.class);
+            }
+                else{
+
+                    intent=new Intent(v.getContext(),Cinemaactivity.class);
                 }
                 v.getContext().startActivity(intent);
             }
